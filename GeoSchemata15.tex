@@ -714,9 +714,11 @@ wobei die letzte Gleichung aus der UAE des Kolimes folgt. Insgesamt folgt dann d
 
 
 \begin{proposition}  %%Prop. 2.14
-Für jede stetige Abbildung $f: X \longrightarrow Y$ von topologischer Räumen sind die Funktoren
+Für jede stetige Abbildung $f: X \longrightarrow Y$ topologischer Räumen sind die Funktoren
 $$f_{*}: \garben(X) \longrightarrow \garben(Y),  \qquad f^{-1}: \garben(Y) \longrightarrow \garben(X)$$
-zueinander adjungiert. Genauer: $f^{-1}$ ist linksadjungiert zu $f_*$, bzw. $f_*$ ist rechtsadjungiert zu $f^{-1}$, d.h. die Funktoren $\Hom_{\underline{\rm{Sh}}(X)}\left( f^{-1}(\cdot), \cdot\right)$ und $\Hom_{\garben(Y)}\left(\cdot, f_{*}(\cdot)\right)$ sind isomorph als Funktoren von $\garben(Y) \times \garben(X)$ nach $\sets$. Das wiederum heißt: Für alle Garben $\mathcal{F} \in \garben(X)$ und $\mathcal{G} \in \garben(Y)$ gibt es eine Bijektion
+zueinander adjungiert. 
+Genauer: $f^{-1}$ ist linksadjungiert zu $f_*$, bzw. $f_*$ ist rechtsadjungiert zu $f^{-1}$, 
+d.h. die Funktoren $\Hom_{\underline{\rm{Sh}}(X)}\left( f^{-1}(\cdot), \cdot\right)$ und $\Hom_{\garben(Y)}\left(\cdot, f_{*}(\cdot)\right)$ sind isomorph als Funktoren von $\garben(Y) \times \garben(X)$ nach $\sets$. Das wiederum heißt: Für alle Garben $\mathcal{F} \in \garben(X)$ und $\mathcal{G} \in \garben(Y)$ gibt es eine Bijektion
 $$\alpha_{\F, \G}: \Hom\left(f^{-1}\mathcal{G}, \F \right) \longrightarrow \Hom\left( \G, f_* \F\right),$$
 sodass für alle Paare von Garbenmorphismen $\phi: \F \longrightarrow \F'$ und $\psi: \G \longrightarrow \G'$ das folgende Diagramm kommutiert:
 
@@ -725,7 +727,7 @@ $$
 \xymatrix{
 \Hom\left(f^{-1}\mathcal{G}', \mathcal{F} \right) \ar[rrr]^{\alpha_{\F, \G'}} \ar[dd]^{} &&& \Hom \left(\mathcal{G}', f_*\mathcal{F}\right) \ar[dd]^{} \\
 &&& \\
-\Hom\left(f^{-1}\mathcal{G}, \mathcal{F}'\right) \ar[rrr]^{\alpha_{\F, \G}} &&& \Hom\left(\G, f_+\F\right)
+\Hom\left(f^{-1}\mathcal{G}, \mathcal{F}'\right) \ar[rrr]^{\alpha_{\F, \G}} &&& \Hom\left(\G, f_*\F\right)
 }
 \end{xy}
 $$
@@ -733,7 +735,7 @@ $$
 \begin{pr}
 Zur Definition von $\alpha_{\F, \G}$ konstruieren wir einen Garbenmorphismus $\sigma_{\G}: \G \longrightarrow f_* f^{-1} \G$. Ist dann $\phi: f^{-1} \G \longrightarrow \F$, so sei 
 $$\alpha_{\F, \G} = f_*(\phi) \circ \sigma_{\G}$$
-die Komposition dieser zwei Morphismen. Zur Definition von $\sigma_{\G}$.: Für $V \subseteq Y$ ofen sei
+die Komposition dieser zwei Morphismen. Zur Definition von $\sigma_{\G}$.: Für $V \subseteq Y$ offen sei
 \setlength{\abovedisplayskip}{5.5pt}
 \setlength{\belowdisplayskip}{5.5pt}
 \begin{alignat*}{5}
@@ -1414,8 +1416,8 @@ denn:
 \begin{defin}   %%definition 7.1
 Sei $(X, \Ocal_X)$ ein Schema.
 \comp
-\item $X$ heißt \textit{lokal noethersch}, wenn es eine offene Überdeckung $\{U_i\}_{i \in I}$ von $X$ durch affine Schemata $U_i =\spec R_i$ gibt, sodass für jedes $i \in I$ $R_i$ noetersch ist.
-\item $X$ heißt noethersch, falls es die Überdeckung in (i) endlich gewählt werden kann.
+\item $X$ heißt \textit{lokal noethersch}, wenn es eine offene Überdeckung $\{U_i\}_{i \in I}$ von $X$ durch affine Schemata $U_i =\spec R_i$ gibt, sodass für jedes $i \in I$ $R_i$ noethersch ist.
+\item $X$ heißt noethersch, falls die Überdeckung in (i) endlich gewählt werden kann.
 \cend
 
 \end{defin}
@@ -1465,7 +1467,7 @@ was zu zeigen war. $\hfill \Box$
 \item Die nichttriviale Implikation folgt aus (ii).
 \item Sei also $X$ noethersch. Zeige: Jedes affine Unterschema $U = \spec R$ ist noethersch. Nach Voraussetzung gibt es $U_i = \spec R_i$ offen in $X$, $i \in I$, sodass $\bigcup_{i \in I} \ U_i = X$ und $R_i$ noethersch. Sei nun $U = \spec R \subseteq X$ offen. Zu zeigen: $R$ ist noethersch. Überdecke die $U \cap U_i$ durch Mengen $\{D(f_{ij})\}_{j \in J}$ mit $f_{ij} \in R_i$. Es gilt bekanntlich $D(f_{ij}) = \spec \left(R_i\right)_{f_{ij}}$. Die Lokalisierung eines noetherschen Rings ist noethersch (Algebra), also sind die $R_{ij} := R_{f_{ij}}$ noethersch für alle $i,j \in I,J$. Überdecke nun eine weiteres Mal die $D(f_{ij})$ durch offene Mengen $D(g_{ijk})$ mit geeigneten Elementen $g_{ijk} \in R$. Wegen $D(f_{ij}) \subseteq U$ wird also $\phi_{ij}: R \la \left(R_i\right)_{f_{ij}}$ induziert. Weiter ist 
 $$R_{g_{ijk}} = \left(R_{ij}\right)_{\phi_{ij}(g_{ijk})}$$
-als Lokalisierung eines noetehrschen Rings wieder noethersch. Da $U$ quasikompakt ist, genügen endlich viele der $D(g_{ijk})$, um $U$ zu überdecken - bezeichne diese als $g_1, \ldots, g_r$. Wir haben nun also 
+als Lokalisierung eines noetherschen Rings wieder noethersch. Da $U$ quasikompakt ist, genügen endlich viele der $D(g_{ijk})$, um $U$ zu überdecken - bezeichne diese als $g_1, \ldots, g_r$. Wir haben nun also 
 $$\spec R = \bigcup_{i=1}^r \spec R_{g_i}$$
 mit Noetherschen Ringen $R_g$. Sei nun
 $$I_1 \subseteq I_2 \subseteq I_3 \subseteq \ldots$$
@@ -1851,7 +1853,7 @@ Dann ist $\mathcal{L}(D)$ eine $\mathcal{O}_X$-Modulgarbe, denn: für $g \in \ma
 $$\textrm{div} \left(fg \vert_U\right) + D\vert_U = \textrm{div} \left(f\vert_U\right) + \textrm{div}\left(g\vert_U\right) + D\vert_U = \textrm{div}\left(f\vert_U\right) + D\vert_U \geqslant 0.$$
 Weiter ist der globale Schnitt
 $$\mathcal{L}(D)(X) = \left\{f \in k(X) \ \vert \ \textrm{div}f + D \geqslant 0 \right\} \cup \{0\} = L(D)$$
-gerade der Riemann-Roch-Raum für $D$. Dieser ist demnach ein $\mathcal{O}_X(X)$-Modul, also ein $k$-Vektorraum. Dieses Resultat hatten wir vergangener Semester bereits gesehen. Betrachte nun eine kleine Umgebung $U \subseteq X$ von $P \in X$, das heißt es gilt $n_Q = 0$ für alle $Q \in U \setminus \{P\}$. Sei $t_P$ ein Erzeuger des zu $P$ zugehörigen maximalen Ideals $\mathfrak{m}_P \subset \mathcal{O}_{X,P}$. Wähle nun $U$ so, dass $\divrm \ t_P \vert_{U \setminus \{P\}} =0$, das heißt $t_P \in \mathcal{O}_X(U)$. Dann ist $t_P^{-n_P} \in \mathcal{L}(D)(U)$ und $t_P^{-n_p}$ erzeugt $\mathcal{L}(D)(U)$ als $\mathcal{O}_X(U)$-Modul, denn: Ist $g \in \mathcal{O}_X(U)$, so ist $$\divrm \left(t_P^{-n_P} g \vert_U \right) = \divrm\left(t_P^{-n_P} \vert_U\right) + \divrm \left(g \vert_U\right) \geqslant \divrm \left(t_P^{-n_P} \vert_U\right) = -n_P P,$$
+gerade der Riemann-Roch-Raum für $D$. Dieser ist demnach ein $\mathcal{O}_X(X)$-Modul, also ein $k$-Vektorraum. Dieses Resultat hatten wir vergangenes Semester bereits gesehen. Betrachte nun eine kleine Umgebung $U \subseteq X$ von $P \in X$, das heißt es gilt $n_Q = 0$ für alle $Q \in U \setminus \{P\}$. Sei $t_P$ ein Erzeuger des zu $P$ zugehörigen maximalen Ideals $\mathfrak{m}_P \subset \mathcal{O}_{X,P}$. Wähle nun $U$ so, dass $\divrm \ t_P \vert_{U \setminus \{P\}} =0$, das heißt $t_P \in \mathcal{O}_X(U)$. Dann ist $t_P^{-n_P} \in \mathcal{L}(D)(U)$ und $t_P^{-n_p}$ erzeugt $\mathcal{L}(D)(U)$ als $\mathcal{O}_X(U)$-Modul, denn: Ist $g \in \mathcal{O}_X(U)$, so ist $$\divrm \left(t_P^{-n_P} g \vert_U \right) = \divrm\left(t_P^{-n_P} \vert_U\right) + \divrm \left(g \vert_U\right) \geqslant \divrm \left(t_P^{-n_P} \vert_U\right) = -n_P P,$$
 also
 $$\divrm \left(t_P^{-n_P} g \vert_U\right) + D\vert_U \geqslant -n_PP + n_pP \geqslant 0$$
 und damit $t_P^{-n_P} g \in \mathcal{L}(D)(U)$. Ist umgekehrt $g \in \mathcal{L}(D)(U)$, also $$\divrm \left(g \vert_U\right) + D\vert_U = \divrm\left(g \vert_U\right) + n_P P \geqslant 0,$$
@@ -2025,7 +2027,7 @@ ist also exakt. Der Funktor $f_*$ ist linksexakt, denn: Ist $0 \la \mathcal{F}' 
 \begin{ex} %%Beispiel 10.1
 Sei $X$ nichtsinguläre, projektive Kurve über einem algebraisch abgeschlossenen Körper $k$, $D= \sum_{P \in X} n_P P$ ein Divisor auf $X$ sowie $\mathcal{L}(D)$ die zu $D$ assoziierte $\mathcal{O}_X$-Modulgarbe
 $$\mathcal{L}(D)(U) = \left\{ f \in k(X) \ \vert \ \left( \text{div} f + D \right)\vert_U \geqslant 0 \right\} \cup \{0\}.$$
-Erinnerung: Ist $U$ "klein", so ist $\mathcal{L}(D)(U) = t_U \mathcal{O}_X(U)$. Außerdem gilt für den Halm in jeden Punkt $P \in X$ :
+Erinnerung: Ist $U$ "klein", so ist $\mathcal{L}(D)(U) = t_U \mathcal{O}_X(U)$. Außerdem gilt für den Halm in jedem Punkt $P \in X$ :
 $$\mathcal{L}(D)_P = \left\{ f \in k(X) \ \vert \ \text{ord}_P(f) \geqslant -n_P \right\} \cup \{0\} = t_P^{-n_P} \mathcal{O}_{X,P}.$$
 \end{ex}
 
@@ -2124,7 +2126,7 @@ Sei $\lokring$ lokal geringter Raum, $\mathcal{F}$ lokal freie Garbe  von Rang $
 \begin{pr}
 \begin{compactenum}
 \item Wähle eine ausreichend feine Überdeckung $\{U_i\}_{ \in I}$ von $X$, sodass 
-$$\mathcal{F} \vert_{U_i} \cong \left( \mathcal{O}_X \vert_{U_i} \right)^n, \qquad \mathcal{G}\vert_{U_i} \left( \oxg\vert_{U_i} \right)^m$$
+$$\mathcal{F} \vert_{U_i} \cong \left( \mathcal{O}_X \vert_{U_i} \right)^n, \qquad \mathcal{G}\vert_{U_i} \cong\left( \oxg\vert_{U_i} \right)^m$$
 und wähle Basen $t_{i1}, \ldots, t_{in}$ von $\mathcal{F}\vert_{U_i}$ und $s_{i1}, \ldots, s_{im}$ von $\mathcal{G}\vert_{U_i}$ als $\mathcal{O}_X(U_i)$-Moduln. Dann bilden die $t_{i1} \otimes s_{i1}, \ldots, t_{i1} \otimes s_{im}, \ldots, t_{in} \otimes s_{im}$ eine Basis von $\mathcal{F} \otimes_{\mathcal{O}_X} \mathcal{G}$, woraus die Behauptung folgt.
 \item Sei $U \subseteq X$ offen mit $\mathcal{F} \vert_U \cong \left( \oxg\vert_U\right)^n$. Dann ist
 \setlength{\abovedisplayskip}{5.5pt}
@@ -2689,7 +2691,7 @@ sowie $\phi: \F \la \G$ ein Garbenmorphismus. Definiere $\phi^{i}: \I^{i} \la \m
 $$
 \begin{xy}
 \xymatrix{
-0 \ar[rr] && \F \ar[d]_{\phi} \ar[rr]^{\epsilon} \ar@{-->}[rrd]^{{\epsilon} \circ \phi} && \mathcal{I}^{0} \ar[d]_{\phi^0} \ar[rr]^{d^{0}} && \I^{1} \ar[d]_{\phi1} \ar[rr] && \ldots \\
+0 \ar[rr] && \F \ar[d]_{\phi} \ar[rr]^{\epsilon} \ar[rrd]^{{\tilde{\epsilon}} \circ \phi} && \mathcal{I}^{0} \ar@{-->}[d]_{\phi^0} \ar[rr]^{d^{0}} && \I^{1} \ar@{-->}[d]_{\phi^1} \ar[rr] && \ldots \\
 0 \ar[rr] && \G \ar[rr]^{\tilde{\epsilon}} && \mathcal{J}^{0} \ar[rr]^{\tilde{d}^{0}} && \mathcal{J}^{1} \ar[rr] && \ldots
 }
 \end{xy}
