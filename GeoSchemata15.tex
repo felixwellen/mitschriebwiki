@@ -984,7 +984,7 @@ Sei $(X, \mathcal{O}_X)$ ein Schema.
 \begin{compactenum}
 
 \item Sei $R$ ein Ring, $X = \spec R$, $N_R := \sqrt{( 0 ) }$ das Nilradikal in $R$. Dann ist $\slant{R}{N_R}$ reduziert, $X_{\textrm{red}} = \spec \left( \slant{R}{N_R}\right)$ heißt das \textit{zu $X$ assoziierte reduzierte Schema}.
-\item Der von $\pi: R \longrightarrow \slant{R}{N_R}$ induzierte Schemamorphismus ist ein Homoömorphismus. Er mach $X_{\textrm{red}}$ zu einem abgeschlossenen Unterschema vom $X$.
+\item Der von $\pi: R \longrightarrow \slant{R}{N_R}$ induzierte Schemamorphismus ist ein Homoömorphismus. Er macht $X_{\textrm{red}}$ zu einem abgeschlossenen Unterschema von $X$.
 \item Sei $(X, \OO_X)$ ein Schema, $\mathcal{N}_X$ sei die Idealgarbe, für die $\mathcal{N}_X(U)$ das Nilradikal in $\mathcal{O}_X(U)$ ist. Dann ist $\mathcal{N}_X$ quasikohärent. $X_{\textrm{red}}= \left(X, \slant{\OO_X}{\mathcal{N}_X}\right)$ heißt das \textit{zu $X$ assoziierte reduzierte Schema}.
 \item $(X, \OO_X)$ heißt \textit{reduziert}, falls $\mathcal{N}_X = ( 0 )$.
 \end{compactenum}
@@ -1524,7 +1524,7 @@ ist nicht von lokal endlichem Typ.
 
 \begin{defin} %%Definition 7.4
 
-Ein Morphismus $f: X \la Y$ vom Schemata heißt \textit{endlich}, falls es eine offene affine Überdeckung $\{U_i = \spec A_i\}_{i \in I}$ von $Y$ gibt, sodass $f^{-1}(U_i) = \spec B_i$ für jedes $i \in I$ affin und $B_i$ endlich erezugter $A_i$-Modul ist.
+Ein Morphismus $f: X \la Y$ vom Schemata heißt \textit{endlich}, falls es eine offene affine Überdeckung $\{U_i = \spec A_i\}_{i \in I}$ von $Y$ gibt, sodass $f^{-1}(U_i) = \spec B_i$ für jedes $i \in I$ affin und $B_i$ endlich erzeugter $A_i$-Modul ist.
 \end{defin}
 
 
@@ -1652,7 +1652,7 @@ Seien $X,Y$ noethersche Schemata, $f: X \la Y$ von endlichem Typ. Dann gilt:
 \end{compactenum}
 
 \begin{pr}
-Es werden nur jeweils die Implikation "$\Rightarrow$" gezeigt - die Rückrichtung lässt sich beispielsweise in Hartshorne II.4.3 bzw. II.4.7 nachlesen.
+Es werden nur jeweils die Implikation \enquote{$\Rightarrow$} gezeigt - die Rückrichtung lässt sich beispielsweise in Hartshorne II.4.3 bzw. II.4.7 nachlesen.
 \begin{compactenum}
 \item Sei nun ein Bewertungsdiagramm von $X$ über $Y$ sowie zwei Fortsetzungen $h, h': T \la X$ gegeben.
 
@@ -1854,7 +1854,7 @@ Sei $X$ eine nichtsinguläre, projektive Kurve über einem algebraisch abgeschlo
 $$\mathcal{L}(D)(U) := \left\{ f \in k(X) \ \vert \ \textrm{div} \left(f\vert_U\right) + D\vert_U \geqslant 0 \right\} \cup \{0\}.$$
 Dann ist $\mathcal{L}(D)$ eine $\mathcal{O}_X$-Modulgarbe, denn: für $g \in \mathcal{O}_X(U)$ ist $\textrm{div}g \geqslant 0$ und damit
 $$\textrm{div} \left(fg \vert_U\right) + D\vert_U = \textrm{div} \left(f\vert_U\right) + \textrm{div}\left(g\vert_U\right) + D\vert_U = \textrm{div}\left(f\vert_U\right) + D\vert_U \geqslant 0.$$
-Weiter ist der globale Schnitt
+Weiter sind die globalen Schnitten
 $$\mathcal{L}(D)(X) = \left\{f \in k(X) \ \vert \ \textrm{div}f + D \geqslant 0 \right\} \cup \{0\} = L(D)$$
 gerade der Riemann-Roch-Raum für $D$. Dieser ist demnach ein $\mathcal{O}_X(X)$-Modul, also ein $k$-Vektorraum. Dieses Resultat hatten wir vergangenes Semester bereits gesehen. Betrachte nun eine kleine Umgebung $U \subseteq X$ von $P \in X$, das heißt es gilt $n_Q = 0$ für alle $Q \in U \setminus \{P\}$. Sei $t_P$ ein Erzeuger des zu $P$ zugehörigen maximalen Ideals $\mathfrak{m}_P \subset \mathcal{O}_{X,P}$. Wähle nun $U$ so, dass $\divrm \ t_P \vert_{U \setminus \{P\}} =0$, das heißt $t_P \in \mathcal{O}_X(U)$. Dann ist $t_P^{-n_P} \in \mathcal{L}(D)(U)$ und $t_P^{-n_p}$ erzeugt $\mathcal{L}(D)(U)$ als $\mathcal{O}_X(U)$-Modul, denn: Ist $g \in \mathcal{O}_X(U)$, so ist $$\divrm \left(t_P^{-n_P} g \vert_U \right) = \divrm\left(t_P^{-n_P} \vert_U\right) + \divrm \left(g \vert_U\right) \geqslant \divrm \left(t_P^{-n_P} \vert_U\right) = -n_P P,$$
 also
@@ -1865,7 +1865,7 @@ $$\divrm\left(t_P^{n_P} g \vert_U\right) = n_P P + \divrm \left(g \vert_U\right)
 also $t_P^{n_P} g \in \mathcal{O}_X(U)$ und damit $g= t_P^{-n_P} \left( t_P^{n_P} g \right)$.
 
 
-\item Sei $\Omega= \Omega_{k(X)/k}$ der $k(X)$-Vektorraum der Kählerdifferentiale von $k(X)/k$. Die Elemente von $\Omega$ heißen rationale Differentiale auf $X$. Ohne Einschränkung gelte $X=V(f)$ mit einem irreduziblen Polynom $f \in k[X,Y]$. Dann ist $k(X) = \textrm{Quot} \slant{k[X,Y]}{(f)}$. Damit wird $\Omega$ erzeugt von den Elementen $\textrm{d}g$ für $g \in k(X)$, wobei $\textrm{d}$ die universelle Derivation bezeichne. Da $\textrm{d}(X^2) = 2X \textrm{d}X$und induktiv $\textrm{d}(X^n) = n! X \textrm{d}X$, genügen die linearen Terme. $\textrm{d}f=0$ ergibt also eine lineare Gleichung zwischen $\textrm{d}X$ und $\textrm{d}Y$ und wir erhalten $\dim_{k(X)} \Omega =1$. Wir wollen uns daraus nun eine $\mathcal{O}_X$-Modulgarbe basteln. Für $ \omega \in \Omega_{k(X)/k}$ sei
+\item Sei $\Omega= \Omega_{k(X)/k}$ der $k(X)$-Vektorraum der Kählerdifferentiale von $k(X)/k$. Die Elemente von $\Omega$ heißen rationale Differentiale auf $X$. Ohne Einschränkung gelte $X=V(f)$ mit einem irreduziblen Polynom $f \in k[X,Y]$. Dann ist $k(X) = \textrm{Quot} \slant{k[X,Y]}{(f)}$. Damit wird $\Omega$ erzeugt von den Elementen $\textrm{d}g$ für $g \in k(X)$, wobei $\textrm{d}$ die universelle Derivation bezeichne. Da $\textrm{d}(X^2) = 2X \textrm{d}X$und induktiv $\textrm{d}(X^n) = n X^{n-1} \textrm{d}X$, genügen die linearen Terme. $\textrm{d}f=0$ ergibt also eine lineare Gleichung zwischen $\textrm{d}X$ und $\textrm{d}Y$ und wir erhalten $\dim_{k(X)} \Omega =1$. Wir wollen uns daraus nun eine $\mathcal{O}_X$-Modulgarbe basteln. Für $ \omega \in \Omega_{k(X)/k}$ sei
 $$\textrm{div} \omega = \sum_{P \in X} \mathrm{ord}_P \omega P$$
 folgendermaßen definiert: Für $P \in X$ sei $t_P$ Uniformisierende, also Erzeuger vom maximalen Ideal $\mathfrak{m}_P$. Dann gilt $\textrm{d}t_P(P)=0$ aber $\textrm{d}t_P \neq 0$, also bildet $\{\textrm{d}t_P\}$ eine Basis von $\Omega_{k(X)/k}$. Schreibe also $\omega= f_P \textrm{d}t_P$ für ein $f_P \in k(X)$. Setze nun $\textrm{ord}_P(\omega) = \textrm{ord}_P(f_P)$. Beachte: $t_P - t_P(Q)$ ist Uniformisierende für $Q$ auf einer offenen (und dichten) Teilmenge von $X$ und $\textrm{d}(t_P-t_P(Q)) = \text{d}t_P$. Damit ist $\textrm{div} \omega$ wohldefiniert. Setze nun 
 $$\Omega_X(U) := \left\{ \omega \in \Omega_{k(X)/k} \ \vert \ \text{div} \omega \vert_U \geqslant 0 \right\} \cup \{0\}.$$
@@ -2373,8 +2373,8 @@ $$
 \begin{defin}  %%defin 12.
 Eine Kategorie $\mathcal{C}$ heißt \textit{abelsch}, falls folgende Eigenschaften erfüllt sind:
 \begin{compactenum}
-\item Es bildet $\Hom_{\C}(A,B)$ eine abelsche Gruppe bezüglich der Addition $"+"$ für alle $A,B \in \mathrm{Ob}(\C)$.
-\item Für Homomorphismen gelten die Distributivgesetze bezüglich $"+"$ und $"\circ"$, das heißt es gilt
+\item Es bildet $\Hom_{\C}(A,B)$ eine abelsche Gruppe bezüglich der Addition \enquote{$+$} für alle $A,B \in \mathrm{Ob}(\C)$.
+\item Für Homomorphismen gelten die Distributivgesetze bezüglich \enquote{$+$} und \enquote{$\circ$}, das heißt es gilt
 $$(f+g) \circ h = f\circ h + g \circ h, \qquad e \circ (f +g) = e \circ f + e \circ g$$
 für alle $h \in \mathrm{Mor}_{\mathcal{C}}(A,B)$, $f,g \in \mathrm{Mor}_{\mathcal{C}}(B,C)$, $e \in \mathrm{Mor}_{\mathcal{C}}(C,D)$.
 \item Endliche direkte Summen, Kerne, Kokerne existieren.
@@ -2488,7 +2488,7 @@ $$(1) \qquad 0 \la \F \la \G_0 \la \slant{\G_0}{\F} \la 0$$
 $$(2) \qquad 0 \la \slant{\G_0}{\F} \la \G_1 \la \G_2 \la \ldots$$
 Nach Voraussetzung gibt es zu (1) eine lange exakte Sequenz
 $$0 \la H^{0}(X, \F) \la H^{0}(X, \G_0) \la H^{0}\left(X, \slant{\G_0}{\F}\right) \la H^{1}(X, \F) \la H^{1}(X, \G_0) = 0,$$
-also gilt, da $H^{0}\left(X, \slant{\G_0}{\F}\right) \la H^{1}(X, \F)$ Epimophismus ist
+also gilt, da $H^{0}\left(X, \slant{\G_0}{\F}\right) \la H^{1}(X, \F)$ Epimorphismus ist
 \setlength{\abovedisplayskip}{5.5pt}
 \setlength{\belowdisplayskip}{5.5pt}
 \begin{alignat*}{5}
@@ -2584,7 +2584,7 @@ Dann ist $$\tilde{\phi}_a: \langle A', a\rangle \la \QZ, \qquad a' + k \cdot a \
 $$\tilde{\phi}_a(ka) = \tilde{\phi}_a(k_0na) = k_0 \phi(na) = k_0 n \tilde{\phi}_a(a) = k \tilde{\phi}_a(a).$$
 Damit haben wir bereits eine Fortsetzung von $\phi$ auf $\langle A', a\rangle$ für alle $a \in A$. Für $a \in A$ sei nun 
 $$\Phi:= \left\{ (\overline{A}, \overline{\phi} \ \vert \ A \subseteq \tilde{A} \leqslant A', \ \overline{\phi}: \overline{A} \la \QZ \textrm{ mit } \overline{\phi} \vert_{A'} = \phi \right\}.$$
-Dann ist $\Phi$ nichtleer und durch "$\leqslant$" geordnet, enthält nach Zorns Lemma also ein maximales Element $(A_{\textrm{max}}, \phi_{\textrm{max}})$. Wäre $A_{\textrm{max}} \neq A$, so wähle $\overline{a} \in A \setminus \overline{A}$ und verfahre wir oben und führe diesen Fall zum Widerspruch. Damit folgt die Behauptung. $\hfill \Box$
+Dann ist $\Phi$ nichtleer und durch \enquote{$\leqslant$} geordnet, enthält nach Zorns Lemma also ein maximales Element $(A_{\textrm{max}}, \phi_{\textrm{max}})$. Wäre $A_{\textrm{max}} \neq A$, so wähle $\overline{a} \in A \setminus \overline{A}$ und verfahre wir oben und führe diesen Fall zum Widerspruch. Damit folgt die Behauptung. $\hfill \Box$
 \end{ex}
 
 \begin{lemma}
@@ -2654,7 +2654,7 @@ ist also exakt, was zu zeigen war. $\hfill \Box$
 
 \begin{defin}
 
-Sei $\lokring$ ein Schema, $\F$ eine Garbe abelscher Gruppen aus $X$ und 
+Sei $\lokring$ ein Schema, $\F$ eine Garbe abelscher Gruppen auf $X$ und 
 $$0 \la \F \la \I^{0} \la \I^{1} \la \ldots $$
 eine injektive Auflösung von $\F$. Dann heißt für $i \geqslant 0$
 $$H^{i}(X, \F) := H^{i}(\Gamma(X, \I^{\bullet})$$
